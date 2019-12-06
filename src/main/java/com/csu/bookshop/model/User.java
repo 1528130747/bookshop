@@ -4,16 +4,16 @@ import java.io.Serializable;
 
 public class User implements Serializable {
 
-    private int userId;
+    private int id;
     private String userName;
     private int userAge;
 
-    public int getUserId() {
-        return userId;
+    public int getId() {
+        return id;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getUserName() {
@@ -35,7 +35,7 @@ public class User implements Serializable {
     @Override
     public String toString() {
         return "User{" +
-                "userId=" + userId +
+                "id=" + id +
                 ", userName='" + userName + '\'' +
                 ", userAge=" + userAge +
                 '}';
